@@ -1,0 +1,976 @@
+/***********************************************BASE***********************************/
+
+body{
+     padding: 0; 
+     margin: 0; 
+     width: auto;
+     font-family: 'Roboto', sans-serif;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+     background-size: auto; 
+     background-position: center;     
+}
+hr{
+    color: #cc9966;
+}
+.container-fluid{
+    padding: 0;  
+}
+h1, h2, h3, h4, h5, h6{
+    color: #cc9966;
+    font-family: 'Montserrat', sans-serif;
+}
+/* *******HEADER ********** */
+/*Le header est séparé en trois parties :  div(TopNav), div(logo), nav(navbar)*/
+/*  PARTIE 1 HEADER : topNav */
+#topNav{
+    background-color: #cc9966;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+     padding-right: 80px; 
+    font-size: 15px;
+    box-sizing: border-box;  
+}
+#contactTopNav{
+    padding-top: 15px;
+}
+#reserve{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#btnReserve{
+    display: flex;
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 5px;
+    border:2px solid white;
+}
+#choixLangue{
+    display: flex;
+     height:30px;
+     width: 80px;
+     margin-left: 30px;
+     align-items: center; 
+ }
+ #choixLangue label{
+     padding-right: 5px;
+ }
+ #language-selected{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 5px;
+    border:2px solid white;
+    padding: 3px;
+ }
+ /*PARTIE 2 HEADER : logo*/
+ #logo{
+     display: flex;
+     justify-content: center;
+     background-color: white; 
+ }
+ #logo img{
+     width: 400px;
+     padding-top: 20px;
+ }
+ /* PARTIE 3 HEADER : navbar */
+ .navbar{
+    background-color: white;
+    text-transform: uppercase;
+    z-index: 2;
+}
+a.nav-link{
+    color:#cc9966 !important;
+    border:white !important;
+    border-radius: 5px;
+ }
+ .btn{
+     color:#cc9966 ;
+     border:white;
+     text-transform: uppercase;
+ }
+ .btn:hover{
+     background-color:#cc9966 ;
+     border-radius: 5px;
+     border:none;  
+ }
+ a.nav-link:hover{
+    background-color:#cc9966 ;
+    border-radius: 5px;
+    border:2px solid white;
+    color: white  !important;
+ }
+ .d-flex{
+     margin-left: 50px;
+ }
+ /***********CONTENUE PRINCIPAL**************/
+ #logo2 img{
+     width: 150px;
+     display: flex;
+     margin: 0 auto;    
+ }
+ #LC{
+     justify-content: center;   
+ }
+ #transparant1{
+     opacity: 0;
+     height: 500px; 
+ }
+ #contenuePrincipal{
+     background-color: white;  
+ }
+ #transparant2{
+    opacity: 0;
+    height: 300px;   
+ }
+ /**********FOOTER*************/
+ /*Le footer est comme le Header divisé en 3 parties ; footer1, footer2, footer3,*/
+ footer{
+     background-color: white;
+ }
+ /*FOOTER 1*/
+#footer1{
+    display: flex;
+    justify-content: center;
+    
+/*******NEWSLETTERS**/
+}
+#btnNewsletter{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0px 0px 0px;
+    transition-duration: 0.4s;
+ }
+ #btnNewsletter:hover{
+        background-color: #fff;
+        color: #cc9966;
+ }
+
+  /* Positionnez la forme Popup */
+  .login-popup {
+     position: relative; 
+    text-align: center;
+    width: 100%;
+    }
+    /* Masquez la forme Popup */
+    .form-popup {
+    display: none;
+    position: fixed;
+    left: 49%;
+    top:5%;
+    transform: translate(-45%,5%);
+    border: 2px solid #666;
+    border-radius: 5px;
+    z-index: 9;
+    }
+    /* Styles pour le conteneur de la forme */
+    .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px; 
+    }
+    /* Largeur complète pour les champs de saisie */
+    .form-container input[type=text]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+    }
+    /* Quand les entrées sont concentrées, faites quelque chose */
+    .form-container input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+    }
+    /* Stylez le bouton de connexion */
+    .form-container .btn-NL{
+    background-color: #cc9966;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+
+    /* Stylez le bouton pour annuler */
+    .form-container .cancel {
+    background-color: #cc9966;
+    }
+    /* Placez les effets pour les boutons */
+    .form-container .btn-NL:hover, #btnNewsletter {
+    opacity: 1;
+    }
+ /********FOOTER2**********/
+#footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+#imageLogoFooter{
+    width: 230px;
+}
+#paragrapheFooter{
+    line-height: 0.5em;
+    padding-top: 30px;
+    margin-right: 83px;
+}
+#imageLogoFooter img{
+    max-width: 100%;
+    height: auto;
+}
+#socialFooter{
+    text-transform:uppercase;
+}
+#socialFooter a img{
+    width: 40px;
+}
+#titreSocial{
+    display: flex;
+    justify-content: space-between;
+}
+/* FOOTER 3 */
+#footer3{
+    line-height: 4px;  
+}
+.text-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/**************************************************PAGE : ACCUEIL******************************************************/
+#Titre-accueil{
+    text-align: center;
+    margin-top: 100px;
+}
+#presentation{
+   margin-top: 60px;
+    box-sizing: content-box;  
+}
+#texteAccueil1{
+    width: 57%;
+    text-justify: auto;
+}
+
+#histoire{
+     display: flex;
+      justify-content: center;
+     margin: 0 auto; 
+     margin-top: 100px; 
+}
+#hcontenue{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -40px;
+}
+#hcontenue h2, h3{
+    text-align: center;
+}
+#hphoto1{
+    
+    box-sizing: border-box;
+    width: 40%;
+    margin-left: 25px;  
+}
+#btnResRest{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    width: 50%;
+    align-self: center;
+    transition-duration: 0.4s;
+}
+#btnResRest:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+#img-assiette{
+    box-sizing: border-box;
+    width: 40%;
+    margin-left: -40px;
+}
+#rsto{
+    display: flex; 
+    justify-content: center; 
+     flex-wrap: nowrap;
+     margin: 0 auto; 
+     margin-top: 100px;  
+}
+#rstocontenue{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+#btnResCha{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    width: 50%;
+    align-self: center;
+    transition-duration: 0.4s;
+}
+#btnResCha:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+#aChambres{
+    display: flex;
+    justify-content: center; 
+     flex-wrap: nowrap;
+     margin: 0 auto; 
+     margin-top: 100px;
+     padding-bottom: 50px;
+}
+#image-chambre{
+    box-sizing: border-box;
+    width: 40%;
+    margin-left: 25px;
+}
+#acontenuCS{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -40px;
+}
+/***********************************************PAGE CHAMBRES**************************************************/
+#chambres-intro{
+    display: flex;
+    justify-content: center;
+}
+#chambres-intro p{
+    width: 63%;
+    text-align: justify;
+}
+#chambres2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#pChambreClassique{
+    width: 33%;
+    margin-right: 30px;
+}
+#descrChambres2{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#chambres3{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#pChambreConfort{
+    width: 33%;
+    margin-left: 30px;
+}
+#descrChambres3{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#chambres4{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#pChambreDeluxe{
+    width: 33%;
+    margin-right: 30px;
+}
+#descrChambres4{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#chambres5{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#pChambreSuite{
+    width: 33%;
+    margin-left: 30px;
+}
+#descrChambres5{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#chambreResBtn{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+    padding-bottom: 100px;
+}
+/*****************************************************PAGE HÔTEL*****************************************************/
+/*****div acces****/
+#acces2{
+    display: flex;
+    justify-content: center; 
+}
+#planH{
+    width: 50%;
+}
+#accesContenue{
+    width: 28%;
+}
+/***************************div contact*****************/
+#contact2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact3{
+    margin-bottom: -300px;
+}
+.btnContact{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+}
+.btnContact:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+.input1{
+    width: 400px;
+}
+form p{
+    margin-bottom: 0px;
+    margin-top: 30px;  
+}
+#logoContact img{
+    width: 400px;
+}
+#paragrapheContact{
+    line-height: 0.5em;
+    padding-top: 30px;
+    margin-right: 83px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Cobli{
+    margin-top: -15px;
+}
+/*********************div recrutement************************/
+#presRecrut{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px; 
+}
+#presRecrut p{
+    margin-top: 100px;
+    width: 26%;
+    text-align: justify;
+}
+#rec1{
+    width: 30%;
+    border-radius: 10px;
+}
+#formCV{
+    display: flex;
+    box-sizing: border-box;
+     justify-content: space-evenly; 
+}
+.rec2{
+    border-radius: 10px;
+}
+#photosrec2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+/*****qui sommes nous ?****/
+#pQSN{
+    display: flex;
+    justify-content: center;
+}
+#pQSN p{
+    width: 70%;
+    text-align: justify;
+}
+/*********************************************PAGE RESTAURANT************************************************/
+/************************ div midi ******************/
+.titreCarte{
+    font-size: 20px;
+    color: #cc9966;
+}
+#Midi{
+    margin-top: 50px;
+}
+#carteMidi{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.active, .collapsible:hover {
+    background-color: #cc9966;
+    color: white;
+}
+      
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+}
+.content p:hover{
+    color: #cc9966;
+}
+/* **************Div SOIR ***********************************/
+#Soir{
+    margin-top: 50px;
+}
+#carteSoir{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*************************div resto_resa*************************/
+#btnResaResto{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.4s;
+}
+#btnResaResto:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+#resto_resa{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#P_resa{
+    font-size: 20px; 
+}
+
+#btnResaResto{
+    align-items: center;
+}
+/*************************************************PAGES SPA************************************************************/
+
+
+#spa-intro p{
+    width: 63%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+#massages{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#listMassages{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+}
+
+#listMassages p{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+  
+#listMassages p span{
+    align-self: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#listMassages h4{
+    margin-top: 50px;
+}
+#listMassages h5{
+    margin-top: 30px;
+}
+
+#img-massage{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#img-massage1{
+    width: 100%;
+}
+
+
+#soinsVisage, #soinsVisage2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#listSoinVisage, #listSoinVisage2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width: 50%;
+}
+
+#soinsVisage p, #soinsVisage2 p{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+
+#soinsVisage h4, #soinsVisage2 h4{
+    margin-top: 50px;
+}
+#soinsVisage h5, #soinsVisage2 h5{
+    margin-top: 30px;
+}
+
+#img-soinVisage, #img-soinVisage2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#img-soinVisage1, #img-soinVisage2{
+    width: 100%;
+}
+
+
+
+
+#soinsCorps, #soinsCorps2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#listSoinsCorps, #listSoinsCorps2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#soinsCorps p, #soinsCorps2 p{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+#soinsCorps h4, #soinsCorps2 h4{
+    margin-top: 50px;
+}
+
+#soinsCorps h5, #soinsCorps2 h5{
+    margin-top: 30px;
+}
+
+.img-soinsCorps, .img-soinsCorps2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.img-soinsCorps1, .img-soinsCorps2{
+    width: 100%;
+}
+
+
+
+.h4spa{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/***************************************************PAGES ACTUALITES******************************************/
+#p-evenements{
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+/******************** div experience ********************************/
+#experience{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly; 
+}
+#first-img-sem, #p-sem-sm{
+    width: 40%;
+}
+#p-sem-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-sem{
+    width: 100%;
+}
+/************************ div salle atypique ********************/
+#salle_atypique{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+#second-img-sem, #p-salle-atypique{
+    width: 40%;
+}
+#p-salle-atypique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#second-img-sem{
+    display: flex;
+    align-items: center;
+}
+#img-sem-2{
+    width: 100%;
+}
+.titre-tec{
+    color: #cc9966;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/*******************************Div-Devis***********************/
+.dmd-devis{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.form-dev, .pic-form-logo{
+    width: 40%;
+}
+.form-dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pic-form-logo{
+    display: flex;
+    align-items: center;
+}
+.photo-devis-form{
+    width: 100%;
+}
+/**************************Div-presse***********************/
+#articles-presse{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+h6{
+    margin-bottom: 2px;
+}
+/*************************************************Pages AVIS****************************************************/
+/*************************************************Pages DIVERS*************************************************/
+/*******************************div mentions légales********/
+#M-legales{
+    display: flex;
+    justify-content: space-evenly;
+}
+#coordonnees, #Nature, #Liens-h{
+    width: 25%;
+    text-align: justify;
+}
+#M-legales p{
+    margin-bottom: 30px;
+}
+/*********************div CGV******************************/
+#Conditions-GV{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/***********************div plan du site******************/
+#titre-plan-site{
+    margin-top: 40px;
+}
+#centre-plan{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#plan-site{
+    width: 100%;
+}
+/********************div impression*********************/
+#Impression{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#btn-impression{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.4s;
+}
+#btn-impression:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+
+/*********************div Share********************/
+#share{
+    text-transform:uppercase;
+}
+#share a img{
+    margin-top: 20px;
+    width: 80px;
+    padding-bottom: 20px;
+}
+#titreSocial-2{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/**********************************************PAGE RESERVATION************************************************************/
+
+.submit1, .submit2{
+    background-color: #cc9966;
+    color: #fff;
+    border-radius: 3px;
+    border:2px solid white;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+}
+.submit1:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+.submit2:hover{
+    background-color: #fff;
+    color: #cc9966;
+}
+
+#dt1, #dt2, #dt3, #dt4{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

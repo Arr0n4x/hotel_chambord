@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Actualités - Hôtel Chambord</title>
+</head>
+
+<body style="background-image: url(img/actualites.jpg);">
+  <div class="container-fluid">
+    <header>
+      <div id="topNav" class="navbar-expand-sm flex-wrap">
+        <div id="contactTopNav">
+          <p>Tél : 06 36 65 65 65 | 1 Avenue Montaigne 75008 Paris | <a href="hotel.html#contact"
+              style="text-decoration: none; color: white;">contact@chambordhotel.com</a></p>
+        </div>
+        <div id="reserve">
+          <button type="button" id="btnReserve"
+            onclick="window.location.href ='Reservation.html#Reservations';">Réserver</button>
+          <div id="choixLangue">
+            <label for="language-selected"> Langues </label>
+            <select name="language" id="language-selected">
+              <option value="Français">Français</option>
+              <option value="English">English</option>
+              <option value="German">Deutsch</option>
+              <option value="Italiano">Italiano</option>
+              <option value="Espanol">Espanol</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="logo">
+        <a href="index.html"><img class="logo1 img-fluid" src="img/logo1-2.png" alt="logo"></a>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link navbar-brand " aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="hotel.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Hôtel
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="hotel.html#logo2">Accès</a></li>
+                <li><a class="dropdown-item" href="hotel.html#contact">Contact</a></li>
+                <li><a class="dropdown-item" href="hotel.html#recrutement">Recrutement</a></li>
+                <li><a class="dropdown-item" href="hotel.html#quiSommesNous">Qui sommes nous ?</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html">Chambres/Suites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actualites.html">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Avis.html">Avis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Divers.html">Divers</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tapez votre recherche" aria-label="Search"
+              minlength="1" required>
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main id="actualites">
+      <div id="transparant1">
+      </div>
+      <div id="contenuePrincipal">
+        <div id="logo2"><img src="img/LogoC.png" alt="logo2"></div>
+        <h2 style="text-align: center;">Actualités</h2>
+        <h3 style="text-align: center;">evenements & seminaires</h3>
+        <p id="p-evenements">Idéalement situé dans le huitième arrondissement de Paris à deux pas des Champs Elysées,
+          l'Hôtel Chambord propose un cadre d’exception pour l’organisation de votre séminaire.
+          Notre équipe commerciale sera votre partenaire pour faire de vos séminaires un moment inoubliable.</p>
+        <div id="experience">
+          <div id="second-img-sem">
+            <img id="img-sem-2" src="img/disposition_seminaire.jpg" alt="image seminaire">
+          </div>
+          <div id="p-sem-sm">
+            <h4>Une expérience sur-mesure</h4>
+
+            <p>Notre conciergerie séminaire vous facilite la vie et sera une oreille attentive pour mieux connaitre les
+              enjeux de votre séminaire et la manière dont vous souhaitez l’animer pour atteindre vos objectifs.
+              Besoin de travail intensif axé plaisir et détente ? Besoin de discrétion ou de privatisation de
+              l’établissement ?
+              Terminez la journée en beauté en vous relaxant autour d’un cocktail dans notre bar ou sur notre
+              toît-terrasse lors d’un afterwork bien mérité.</p>
+          </div>
+        </div>
+        <div id="salle_atypique">
+          <div id="p-salle-atypique">
+            <h4>Une salle atypique</h4>
+            <p>Celle-ci est éclairée par la lumière du jour, climatisée et à l’abri des regards indiscrets.<br>
+
+              Le matériel répondant à vos attentes est mis à disposition :<br>
+              <br>
+
+              <span class="titre-tec">Matériel technologique</span><br>
+              Vidéo projecteur, Wifi, Sonorisation Bose et Micro, Imprimante en wifi, Ecran.
+              <br>
+              <br>
+              <span class="titre-tec">Matériel pour vos enjeux de communication</span><br>
+              Paperboard avec papier blanc, Stylos et papiers, Post-it de couleur.
+            </p>
+          </div>
+          <div id="first-img-sem">
+            <img id="img-sem" src="img/bg-seminaires.jpg" alt="image seminaire">
+          </div>
+        </div>
+        <div class="dmd-devis">
+          <div class="form-dev">
+            <h4>Demande de devis</h4>
+            <form method="GET" action="hotel.html" enctype="multipart/form-data">
+              <p>
+                <label class="label1" for="nom">Date de l'évènement</label>
+              </p>
+              <input class="input1" type="date" name="date" id="date-id-devis">
+              <p>
+                <label class="label1" for="nbr-jour">Nombre de jours*</label>
+              </p>
+              <input class="input1" type="text" name="nbr-jour" id="nbr-jour" required>
+              <p>
+                <label class="label1" for="nom">Nom Prénom *</label>
+              </p>
+              <input class="input1" type="text" name="nom" id="nom" required>
+              <p>
+                <label class="label1" for="tpe-event">Type d'évènement *</label>
+              </p>
+              <input class="input1" type="text" name="tpe-event" id="tpe-event" required>
+              <p>
+                <label class="label1" for="tel">Téléphone *</label>
+              </p>
+              <input class="input1" type="text" name="tel" id="tel" minlength="10" required>
+              <p>
+                <label class="label1" for="tel">Votre adresse de messagerie *</label>
+              </p>
+              <input class="input1" type="text" name="message" id="message_47" required>
+              <p>
+                <label class="label1" for="message_47">Votre message</label>
+              </p>
+              <textarea id="contenu" rows="6" cols="47" name="contenu" required></textarea>
+              <p>
+                <input type="checkbox" name="cocher" required value="checked"><span> En cochant cette case, j'accepte la
+                  <a href="#" style="text-decoration: none; color: #cc9966;">politique de confidentialité</a> du
+                  site</span>
+              </p>
+              <input class="btnContact" type="submit" name="envoi" value="Envoyer">
+              <br>
+              <br>
+              <p class="Cobli">* Champs obligatoires</p>
+            </form>
+          </div>
+          <div class="pic-form-logo">
+            <img class="photo-devis-form" src="img/logo1-2.png" alt="logo">
+          </div>
+        </div>
+        <div id="Presse">
+          <h2 style="text-align: center;">Actualité de l'hotelerie de luxe</h2>
+          <hr>
+          <div id="articles-presse">
+            <h6>-"Avis d'expert"</h6>
+            <p>
+              Comment Pitaya Group accompagne les établissement hôteliers pour les réouvertures (Journaldespalaces.com) <a
+                target="_blank"
+                href="https://www.journaldespalaces.com/communique-60566-comment-pitaya-group-accompagne-etablissements-hoteliers-pour-reouvertures-.html"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Top 5"</h6>
+            <p>
+              Top 5 des tendances technologiques de l’hôtellerie pour 2021 (hoteldefrance.org) <a target="_blank"
+                href="http://www.hoteldefrance.org/top-5-tendances-technologiques-hotellerie-2021/"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Interview"</h6>
+            <p>
+              
+              Caroline Piel (Hôtels en ville) : "Pour garder nos hôtels ouverts, il a fallu nous
+              réinventer"(lhotellerie-restauration.fr) <a target="_blank"
+                href="https://www.lhotellerie-restauration.fr/journal/hotellerie/2021-05/caroline-piel-hotels-en-ville-pour-garder-nos-hotels-ouverts-il-a-fallu-nous-reinventer.htm"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Coronavirus : l'hôtellerie de luxe sur la touche"</h6>
+            <p>
+              Le tourisme, secteur phare de l'économie française, est impacté comme jamais par la crise sanitaire du
+              Covid-19. Vidés de leurs clients, les hôtels de luxe font grise mine (francetvinfo.fr).<a target="_blank"
+                href="https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-l-hotellerie-de-luxe-sur-la-touche_3901279.html"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Restaurant : 4 clés pour optimiser la réouverture"</h6>
+            <p>
+              Vous êtes restaurateur, et vous souhaitez préparer au mieux la réouverture de votre
+              établissement?(l'hotellerie-restauration.fr) <a target="_blank"
+                href="https://www.lhotellerie-restauration.fr/journal/restauration/2021-04/webinaire-gratuit-restaurant-4-cles-pour-optimiser-la-reouverture1.htm"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Restaurants, cafés, culture… Les aides de l’État maintenues en mai puis adaptées début juin"</h6>
+            <p>
+              Ce lundi 3 mai, le ministre de l’Économie Bruno Le Maire a détaillé le plan d’adaptation du fonds de
+              solidarité alors que la réouverture des commerces dits non-essentiels est prévue à partir du 19 mai. Les
+              aides seront maintenues en mai. Ensuite, ce sera du « sur-mesure » (ouest-france.fr) <a target="_blank"
+                href="https://www.ouest-france.fr/sante/virus/coronavirus/confinement/restaurants-cafes-culture-comment-le-fonds-de-solidarite-va-evoluer-dans-les-mois-a-venir-11e4aea6-abda-11eb-aa8c-8db87c6bb01a"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Google condamné pour son classement des hôtels"</h6>
+            <p>
+              En choisissant de classer les hôtels avec des étoiles qui correspondent au commentaire des clients et non au
+              standing des établissements, Google s'est attiré les foudres de la profession. Le moteur de recherche vient
+              d'être condamné(challenge.fr) <a target="_blank"
+                href="https://www.challenges.fr/entreprise/hotellerie/google-condamne-pour-son-classement-des-hotels_751161"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Perte de deux milliards d'euros pour Accor"</h6>
+            <p>
+              Le géant français de l'hôtellerie Accor a annoncé une perte nette de 1,98 milliard d'euros en 2020 et une
+              activité en chute de 60% à 1,61 milliard d'euros.(challenges.fr) <a target="_blank"
+                href="https://www.challenges.fr/entreprise/perte-de-deux-milliards-d-euros-pour-accor_752498"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Réouverture le 19 mai des terrasses et le 9 juin des cafés et restaurants, avec jauge de 6 clients par table"</h6>
+            <p>
+              Dans une interview à la presse quotidienne régionale, Emmanuel Macron annonce les quatre grandes étapes
+              probables de la réouverture. 3 mai, fin des attestations et des restrictions de déplacement.(hr-infos.fr) <a
+                target="_blank"
+                href="https://hr-infos.fr/reouverture-le-19-mai-des-terrasses-et-le-9-juin-des-cafes-et-restaurants-avec-jauge-de-6-clients-par-table/"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Un hôtel de luxe dans l'espace pourrait bien voir le jour en 2027"</h6>
+            <p>
+              La nouvelle a de quoi ravir les amateurs de tourisme d’aventure. Orbital Assembly Corporation dévoile les
+              plans de son nouvel hôtel de luxe, qui devrait être opérationnel en 2027.(journal du luxe) <a
+                target="_blank" href="https://journalduluxe.fr/hotel-luxe-espace/"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"L’hôtel Cheval Blanc de Paris accueille le restaurant Langosteria."</h6>
+            <p>
+              Située au cœur de la capitale au sein de l’emblématique immeuble de la Samaritaine, la maison hotellière
+              Cheval Blanc s’associe avec la chaîne italienne de restauration Langosteria.
+              <a target="_blank" href="https://journalduluxe.fr/cheval-blanc-langosteria/"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Vers une reprise du tourisme mondial"</h6>
+            <p>
+              L’année 2022 pourrait bien être celle de la reprise du tourisme international.
+              <a target="_blank" href="https://hotellerienews.com/2021/04/14/vers-une-reprise-du-tourisme-mondial/"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Disneyland annonce la prochaine étape pour le pôle Hôtelier"</h6>
+            <p>
+              Alors que les touches finales sont apportées au très attendu Disney’s Hotel New York - The Art of
+              Marvel...(disneylandParis.com)
+              <a target="_blank"
+                href="https://www.journaldespalaces.com/communique-60558-disneyland-paris-annonce-prochaine-etape-plan-renovation-pole-hotelier-.html"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Le cheikh saoudien Al-Jaber soumet un plan de continuation pour sauver ses hôtels parisiens"</h6>
+            <p>
+              L 'homme d'affaires saoudien pourrait garder la main sur son petit groupe hôtelier français.
+              <a target="_blank"
+                href="https://www.lesechos.fr/industrie-services/tourisme-transport/le-cheikh-saoudien-al-jaber-soumet-un-plan-de-continuation-pour-sauver-ses-hotels-parisiens-par-1310099"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+            <h6>-"Les grands hôtels de Nice et Cannes s'apprêtent à rouvrir"</h6>
+            <p>
+              Le célèbre hôtel Negresco à Nice a annoncé mercredi sa réouverture le 6 mai après une période de six mois
+              d'inactivité liée aux restrictions sanitaires, et sur la Croisette à Cannes, le Majestic et le Martinez se
+              préparent aussi à accueillir de nouveau des clients.
+              <a target="_blank"
+                href="https://www.lefigaro.fr/flash-eco/les-grands-hotels-de-nice-et-cannes-s-appretent-a-rouvrir-20210428"
+                style="text-decoration: none; color: #cc9966;">Suite.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="transparant2">
+      </div>
+    </main>
+    <footer class="flex-wrap">
+      <div id="footer1">
+        <button id="btnNewsletter" onclick="openForm()" type="button">inscrivez-vous à notre newsletter</button>
+      </div>
+      <div class="login-popup">
+        <div class="form-popup" id="popupForm">
+          <form action="/action_page.php" class="form-container">
+            <h2>inscrivez-vous</h2>
+            <label for="email">
+              <strong>E-mail</strong>
+            </label>
+            <input type="text" id="email" placeholder="Votre Email" name="email" required>
+            <label for="npnl">
+              <strong>Nom Prénom</strong>
+            </label>
+            <input type="text" id="npnl" placeholder="Votre nom, votre prénom" name="npnl" required>
+            <button type="submit" class="btn-NL">envoyer</button>
+            <button type="button" class="btn-NL cancel" onclick="closeForm()">Fermer</button>
+          </form>
+        </div>
+      </div>
+      <div id="footer2" class="flex-wrap">
+        <div id="imageLogoFooter">
+          <img class="img-fluid" src="img/logo1-2.png" alt="logo">
+        </div>
+        <div id="paragrapheFooter">
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg> 1 avenue Montaigne, 75008 Paris.</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg> +33 (1) 65 95 85 45</p>
+          <p><a href="hotel.html#contact" style="color: #cc9966;text-decoration: none;"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+              </svg> contact@chambordhotel.com</a></p>
+        </div>
+        <div id="socialFooter">
+          <p>Hôtel Chambord </p>
+          <div id="titreSocial">
+            <a href="#"><img class="img-fluid" src="img/trip-advisor.jpg" alt="logo-trip-advisor"></a>
+            <a href="#"><img class="img-fluid" src="img/Facebook.jpg" alt="logo-facebook"></a>
+            <a href="#"><img class="img-fluid" src="img/Instagram.jpg" alt="logo-instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer3">
+        <div class="text-center flex-wrap p-3  text-white bg-dark" style="background-color: rgba(0, 0, 0, 0.2);">
+          <p>© Copyright : Hôtel Chambord |</p>
+          <p>Kamel GUEMAT & Raphaël MONNERON |</p>
+          <p><a href="Divers.html#M-legales" style="color: white; text-decoration: none;">Mentions légales</a></p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
